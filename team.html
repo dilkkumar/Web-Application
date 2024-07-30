@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Save Students Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/83ce78bbab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.card {
+  background-color: rgb(19, 19, 78);
+  margin-left: 90px;
+  float: left;
+  height: 150px;
+  width: 80px;
+  margin-top: 16px;
+  padding:5px 110px;
+  display: flex;
+  color: white;
+  align-items: center;
+  border-radius: 10%;
+}
+.container
+{
+  margin-left: -30px;;
+}
+body{
+  font-family: montserrat;
+  background-color: rgb(225, 225, 232);
+  position: relative;
+}
+nav{
+  background: #0d0850;
+  height: 80px;
+  width: 100%;
+  position:fixed;
+}
+label.logo{
+  color: white;
+  font-size: 45px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  margin-left: -10px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.social ul{
+  float: right;
+  margin-top: 10px;
+  gap: 10px;
+  margin-right: 10px;
+}
+.social ul li{
+  line-height: 15px;
+  margin-bottom: 10px;
+  margin: 0 5px;
+}
+.social ul li a{
+  color:white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  display: flex;
+}
+.social a.active,a:hover{
+  background: #99b8cb;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+pre
+{
+  font-family: montserrat;
+}
+#check{
+  display: none;
+}
+.about
+{
+  margin-top: 20px;
+}
+summary{
+        font-weight: bold;
+        background-color: #1d1f64;
+        padding: 10px;
+        margin-left: -20px;
+        color: white;
+        border-radius: 3%;
+        list-style-type: style inherit;;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    details{
+        width: 80%;
+        margin-left: 10%;
+        padding: 2px 2px;
+        font-size: 20px;
+        color:black;
+        background-color:white;
+        font-style: bold;
+    }
+    p
+    {
+      margin-top: 10px;
+    }
+@media (max-width:952px) 
+{
+  .about
+  {
+    width:3000px ;
+    margin-top: 100px;
+  }
+  details
+  {
+    width: 250px;
+  } 
+}
+@media (max-width:952px) 
+{
+  .row
+  {
+    margin-right: -100px;
+  }
+.card 
+{
+  background-color: rgb(25, 25, 78);
+  margin-left: 20px;
+  margin-right:10px;
+  float: left;
+  height: 170px;
+  width: 70px;
+  margin-top: 16px;
+  padding:5px 110px;
+  display: flex;
+  color: rgb(234, 234, 241);
+  align-items: center;
+}
+.card p
+{
+color: rgb(233, 234, 243);
+}
+.container
+{
+  margin-left: -30px;;
+} 
+.four
+{
+  margin-left: 1100px;
+}
+.four .card
+{
+  margin-left: -180px;
+}
+.social
+{
+  font-size: 20px;
+}
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size:45px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #050736;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.logo{
+ align-content: center;
+ padding: 5px 3px; 
+}
+  </style>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="person.html">Team-Lead profile</a></li>
+                <li><a href="Team.html">Team-profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo">
+      <img src="images/bovlogo.png" style="height: 50px;">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="{{ url_for('aboutus') }}">ABOUT US</a></li>
+      </ul>
+      </div>
+    </nav>
+    <section></section>
+      <center style="margin-top: -430px;">
+        <div class="about"  style="width: 80%;text-align: left;padding: 10px;font-style: italic;">
+            <h2>Save Trees...</h2>
+            <details>
+                <summary>Our Mission</summary>
+                
+            </details>
+            <details>
+              <summary>We are Team Members</summary>
+          <details>
+            <summary>We worked on Save  Students Life Theam</summary>
+            
+        </details>
+        <details>
+          <summary>Your Privacy Matters</summary>
+          
+      </details>
+        </div>
+          <div class="row" style="margin-top: 10px;">
+            <div class="column" style="margin-top: -5px;">
+              <div class="card">
+                <div class="container">
+                  <h2>Obul</h2>
+                  <p class="title"> 2012312A</p>
+             <div class="social">
+             <ul>
+                <pre><li><a href="https://github.com/dilkkumar/python-project.git" target="_blank"><i class="fa-brands fa-profile"></i>github</a></li></pre>
+          <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-github"></i>  GitHub</a></li></pre>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="margin-top: -20px;">
+              <div class="card">
+                <div class="container">
+                  <h2>PRIYA</h2>
+                  <p class="title"> 20A81A05I9</p>
+             <div class="social">
+             <ul>
+          <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-github"></i>  GitHub</a></li></pre>
+                         <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li></pre>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="margin-top: -20px;">
+              <div class="card">
+                <div class="container">
+                  <PRE></PRE><h2>DEVI</h2></PRE>
+                  <p class="title"> 20A81A05E8</p>
+             <div class="social">
+             <ul>
+          <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-github"></i>  GitHub</a></li></pre>
+                         <pre><li><a href="provide your  link" target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li></pre>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+      <div class="four" style="margin-left: 200px;">
+              <div class="column" style="margin-top: -5px;">
+              <div class="card">
+                <div class="container">
+                  <h2>DHANUSHU</h2>
+                  <p class="title"> 20A81A05E0</p>
+             <div class="social">
+             <ul>
+          <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-github"></i>  GitHub</a></li></pre>
+                         <pre><li><a href="provide your Github link " target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li></pre>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="margin-top: -20px;">
+              <div class="card">
+                <div class="container">
+                  <h2>ARUN</h2>
+                  <p class="title"> 20A81A05I1</p>
+             <div class="social" style="align-items: center;">
+             <ul>
+          <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-github"></i>  GitHub</a></li></pre>
+                         <pre><li><a href="provide your Github link" target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li></pre>
+                          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+  </body>
+</html>
