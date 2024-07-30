@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Workshop Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/bovlogo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="person.html">Team-Lead profile</a></li>
+                <li><a href="Team.html">Team-profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2 style="text-align: center;">Student Register Details for the Workshop</h2>
+        
+        <!-- Registration Form -->
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <!-- Form fields go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <label for="workshopSource">Workshop Source:</label>
+            <input type="text" id="workshopSource" name="workshopSource" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                </div>
+                <div class="footer-details">
+                    <p><strong>BrainOvision Solutions India Pvt Ltd </strong></p>
+                    <p>100 feet-road near Near Statue</p>
+                    <p>Hyderabad City, Pin 500081</p>
+                    <p>7659827159</p>
+                    <p>Email: sopport@company.com</p>
+                </div>
+            </div>
+
+            <img src="images/bovlogo.png" style="height: 100px;">
+            <div class="footer-column">
+                <div class="footer-social">
+                    <a href="https://twitter.com/company" target="_blank">Twitter</a>
+
+                    <br>
+                    <a href="https://facebook.com/company" target="_blank">Facebook</a>
+
+                    <br>
+                    <a href="https://linkedin.com/company" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
